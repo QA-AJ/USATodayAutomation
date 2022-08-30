@@ -1,0 +1,61 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7f0a7927-0839-4d6b-98f0-222cb48354aa</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Spotify Test Cases\Premium.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>TestFramework</Name>
+    <RootNamespace>TestFramework</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Spotify Test Cases\ForTheRecord.py" />
+    <Compile Include="Spotify Test Cases\Focus.py" />
+    <Compile Include="Spotify Test Cases\ForArtists.py" />
+    <Compile Include="Spotify Test Cases\Premium.py" />
+    <Compile Include="Spotify Test Cases\Search.py" />
+    <Compile Include="Spotify Test Cases\SignUp.py" />
+    <Compile Include="Spotify Test Cases\Support.py" />
+    <Compile Include="Twitch Test Cases\Browse.py" />
+    <Compile Include="Test Cases\BrowseChannels.py" />
+    <Compile Include="Test Cases\conftest.py" />
+    <Compile Include="Test Cases\Explore.py" />
+    <Compile Include="Test Cases\History.py" />
+    <Compile Include="Test Cases\Shorts.py" />
+    <Compile Include="Test Cases\SignIn.py" />
+    <Compile Include="Test Cases\Searching.py" />
+    <Compile Include="Test Cases\Subscribing.py" />
+    <Compile Include="TestFramework.py" />
+    <Compile Include="Twitch Test Cases\SearchProfile.py" />
+    <Compile Include="Twitch Test Cases\SearchGames.py" />
+    <Compile Include="Twitch Test Cases\SignUp.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Spotify Test Cases\" />
+    <Folder Include="Twitch Test Cases\" />
+    <Folder Include="Reddit Test Cases\" />
+    <Folder Include="Test Cases\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
