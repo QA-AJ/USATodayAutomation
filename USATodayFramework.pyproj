@@ -1,0 +1,77 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0b7daa89-e13e-41be-9176-28451a2e6177</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>USATodayFramework.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>USATodayFramework</Name>
+    <RootNamespace>ForbesFramework</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="base\base_driver.py" />
+    <Compile Include="base\__init__.py" />
+    <Compile Include="configfiles\__init__.py" />
+    <Compile Include="pages\createaccount_page.py" />
+    <Compile Include="pages\elections_page.py" />
+    <Compile Include="pages\entertainment_page.py" />
+    <Compile Include="pages\life_page.py" />
+    <Compile Include="pages\money_page.py" />
+    <Compile Include="pages\opinion_page.py" />
+    <Compile Include="pages\sports_page.py" />
+    <Compile Include="pages\tech_page.py" />
+    <Compile Include="pages\travel_page.py" />
+    <Compile Include="pages\us_page.py" />
+    <Compile Include="testcases\test_createaccount.py" />
+    <Compile Include="testcases\test_elections.py" />
+    <Compile Include="testcases\test_entertainment.py" />
+    <Compile Include="testcases\test_life.py" />
+    <Compile Include="testcases\test_money.py" />
+    <Compile Include="testcases\test_opinion.py" />
+    <Compile Include="testcases\test_sports.py" />
+    <Compile Include="testcases\test_tech.py" />
+    <Compile Include="testcases\test_travel.py" />
+    <Compile Include="testcases\test_us.py" />
+    <Compile Include="USATodayFramework.py" />
+    <Compile Include="pages\__init__.py" />
+    <Compile Include="reports\__init__.py" />
+    <Compile Include="screenshots\__init__.py" />
+    <Compile Include="testcases\conftest.py" />
+    <Compile Include="testcases\__init__.py" />
+    <Compile Include="testdata\__init__.py" />
+    <Compile Include="utilities\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="base\" />
+    <Folder Include="configfiles\" />
+    <Folder Include="utilities\" />
+    <Folder Include="testdata\" />
+    <Folder Include="testcases\" />
+    <Folder Include="screenshots\" />
+    <Folder Include="reports\" />
+    <Folder Include="pages\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
